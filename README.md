@@ -1,0 +1,38 @@
+a simple cricket code of toss winning and match winning
+
+# toss+ipl winners
+import random
+
+e=input("enter 1st team name: ")
+f=input("enter 2nd team name: ")
+
+g=print(f"1st team is: {e}")
+h=print(f"2nd team is: {f}")
+
+a = input(f"the choice required for {e}: ")
+b = input(f"enter the choice required for {f}: ")
+
+
+
+
+result = random.choice(["head","tail"])
+print(f"the result is '{result}'")
+
+
+if result in a:
+    print(f"{f} lost the toss")
+    print(f"{e} won the toss")
+    c=input(f"what {e} want to choose:")
+    print(f"{e} choosen'{c}'")
+        
+
+
+if result in b:
+    print(f"{e} lost the toss ")
+    print(f"{f} won the toss ")
+    d=input(f"what {f} want to choose:")
+    print(f"{f} choosen'{d}'")
+
+result1=random.choice([f"{e} won the match",f"{f} won the match","rain abounded the match"])
+print(result1)
+
